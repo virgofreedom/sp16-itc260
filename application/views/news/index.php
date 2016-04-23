@@ -1,3 +1,11 @@
+<?php
+//views/news/index.php
+
+$this->load->view($this->config->item('theme').'header');
+
+?>
+
+
 <h2><?php echo $title; ?></h2>
 
 <?php foreach ($news as $news_item): ?>
@@ -10,3 +18,10 @@
         <p><a href="<?php echo site_url('news/'.$news_item['slug']); ?>">View article</a></p>
 
 <?php endforeach; ?>
+
+<?php
+//views/news/index.php
+
+$this->load->view($this->config->item('theme').'footer');
+
+?>
