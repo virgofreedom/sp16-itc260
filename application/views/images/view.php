@@ -1,6 +1,9 @@
+<?php
 
 
+$this->load->view($this->config->item('theme').'header');
 
+?>
 
 <?php foreach ($images as $news_item): ?>
 <?php
@@ -10,9 +13,8 @@
      echo "<img title='" . $news_item->title . "' src='" . $photo_url . "' />";
      
 ?>
-   
-        
-
-        
 
 <?php endforeach; ?>
+<?php 
+$this->load->view($this->config->item('theme').'footer');
+?>

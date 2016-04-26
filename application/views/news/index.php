@@ -20,8 +20,5 @@ $this->load->view($this->config->item('theme').'header');
 <?php endforeach; ?>
 
 <?php
-//views/news/index.php
-
 $this->load->view($this->config->item('theme').'footer');
-
 ?>
